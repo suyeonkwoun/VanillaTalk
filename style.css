@@ -1,0 +1,126 @@
+:root {
+  /* size */
+  --my-img-size: 60px;
+  --friend-img-size: 50px;
+  --base-space: 30px;
+  --img-name-space: 20px;
+  --title-space: 10px;
+
+  /* font */
+  --font-weight-header: 600;
+  --font-weight-name: 300;
+  --font-weight-title-msg: 200;
+
+  /* color */
+  --border-color: #dfe6e9;
+  --nav-color: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  padding: 10px var(--base-space);
+  font-family: "Roboto", sans-serif;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--base-space);
+  opacity: 0.7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: var(--base-space);
+}
+
+.status-bar .icons * {
+  margin-left: 10px;
+}
+
+.icons .icon {
+  margin-left: 20px;
+}
+
+.friends_myaccount {
+  display: flex;
+  align-items: center;
+  margin: var(--base-space) 0;
+}
+
+.friends_name {
+  font-weight: var(--font-weight-name);
+}
+
+.friends_msg {
+  font-weight: var(--font-weight-title-msg);
+}
+
+.friend_img {
+  width: var(--my-img-size);
+  height: var(--my-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
+.friends_plus {
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.friend_title {
+  margin-bottom: var(--title-space);
+  font-weight: var(--font-weight-title-msg);
+}
+
+.plusfriend_img {
+  width: var(--friend-img-size);
+  height: var(--friend-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
+.friends_img_text {
+  display: flex;
+  align-items: center;
+  margin-top: var(--title-space);
+}
+
+.friends_list {
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.friends_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friendList_img {
+  width: var(--friend-img-size);
+  height: var(--friend-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 20px 30px;
+  width: 100%;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.nav .nav_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}

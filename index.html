@@ -4,9 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Talk</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>hello, talk</h1>
-    <a href="./chat.html">to Chat</a>
+    <div class="status-bar">
+      <div class="time">21:00</div>
+      <div class="icons">
+        <i class="fas fa-clock"></i><i class="fas fa-volume-mute"></i
+        ><i class="fas fa-wifi"></i>
+        <span>100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <span>Friends</span>
+      <div class="icons">
+        <span class="icon"><i class="fas fa-search"></i></span
+        ><span class="icon"><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+    <main class="friends">
+      <div class="friends_myaccount">
+        <img class="friend_img" src="./images/images.png" />
+        <div class="name_msg">
+          <div class="friends_name">SuyeonKwoun</div>
+          <div class="friends_msg">sunny days!</div>
+        </div>
+      </div>
+      <div class="friends_plus">
+        <span class="friend_title">Plus Friend</span>
+        <div class="friends_img_text">
+          <img class="plusfriend_img" src="./images/plus_friend.png" />
+          <div class="name_msg">
+            <div class="friends_name">Plus Friend</div>
+            <div class="friends_msg">Feel free to talk to me!</div>
+          </div>
+        </div>
+      </div>
+      <div class="friends_list">
+        <span class="friend_title">Friends 15</span>
+        <ul class="friends_ul">
+          <li class="friends_img_text">
+            <img class="friendList_img" src="./images/friend1.png" />
+            <div class="name_msg">
+              <div class="friends_name">Will Smith</div>
+              <div class="friends_msg">Guys! Aladin is released!</div>
+            </div>
+          </li>
+          <li class="friends_img_text">
+            <img class="friendList_img" src="./images/friend2.png" />
+            <div class="name_msg">
+              <div class="friends_name">Scarlett Johansson</div>
+              <div class="friends_msg">It's Scarlett</div>
+            </div>
+          </li>
+          <li class="friends_img_text">
+            <img class="friendList_img" src="./images/friend3.png" />
+            <div class="name_msg">
+              <div class="friends_name">Robert Downey Jr</div>
+              <div class="friends_msg">I am IronMan</div>
+            </div>
+          </li>
+          <li class="friends_img_text">
+            <img class="friendList_img" src="./images/friend4.png" />
+            <div class="name_msg">
+              <div class="friends_name">Jennifer Aniston</div>
+              <div class="friends_msg">I am Rachel Green from Friends</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li><i class="fas fa-user"></i></li>
+        <li><i class="far fa-comment"></i></li>
+        <li><i class="fas fa-search"></i></li>
+        <li><i class="fas fa-ellipsis-h"></i></li>
+      </ul>
+    </nav>
   </body>
 </html>
