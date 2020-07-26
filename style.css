@@ -20,6 +20,17 @@ body {
   margin: 0;
   padding: 10px var(--base-space);
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fixed-top {
+  left: 0;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
 
 .status-bar {
@@ -43,6 +54,17 @@ body {
 
 .icons .icon {
   margin-left: 20px;
+}
+
+.friends {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  padding: 0 30px;
+  top: 100px;
+  box-sizing: border-box;
+  bottom: 60px;
+  overflow: auto;
 }
 
 .friends_myaccount {
