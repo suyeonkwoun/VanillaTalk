@@ -98,7 +98,8 @@ body {
   width: 100%;
   background-color: #f7f7f7;
   box-sizing: border-box;
-  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -webkit-animation: fadein 1s backwards; /* Safari and Chrome */
+  animation-delay: 0.5s;
 }
 
 .nav .nav_list {
