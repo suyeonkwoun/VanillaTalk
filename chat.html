@@ -3,9 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat</title>
+    <title>Chats | Vanilla Talk</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./chat.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>this is chatting page</h1>
+    <div class="fixed-top">
+      <div class="status-bar">
+        <div class="time">21:00</div>
+        <div class="icons">
+          <i class="fas fa-clock"></i><i class="fas fa-volume-mute"></i
+          ><i class="fas fa-wifi"></i>
+          <span>100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <header class="header">
+        <span>Chats</span>
+        <div class="icons">
+          <span class="icon"><i class="fas fa-search"></i></span
+          ><span class="icon"><i class="fas fa-cog"></i></span>
+        </div>
+      </header>
+    </div>
+    <main class="main_content">
+      <ul class="chats_ul">
+        <li class="chat">
+          <div class="chat_block">
+            <img class="chat_img" src="./images/friend1.png" />
+            <div class="name_msg">
+              <div class="friends_name">Will</div>
+              <div class="friends_msg">I'm Coming!</div>
+            </div>
+          </div>
+          <span class="chat_date">July 26 </span>
+        </li>
+        <li class="chat">
+          <div class="chat_block">
+            <img class="chat_img" src="./images/friend2.png" />
+            <div class="name_msg">
+              <div class="friends_name">Scarlette</div>
+              <div class="friends_msg">Hey, Everything is fine?</div>
+            </div>
+          </div>
+          <span class="chat_date">July 24 </span>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li>
+          <a href="./index.html"><i class="fas fa-user"></i></a>
+        </li>
+        <li>
+          <a href="./chat.html"><i class="far fa-comment"></i></a>
+        </li>
+        <li>
+          <a><i class="fas fa-search"></i></a>
+        </li>
+        <li>
+          <a><i class="fas fa-ellipsis-h"></i></a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

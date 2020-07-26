@@ -1,0 +1,76 @@
+:root {
+  /* size */
+  --my-img-size: 60px;
+  --friend-img-size: 40px;
+  --base-space: 30px;
+  --img-name-space: 20px;
+  --title-space: 10px;
+
+  /* font */
+  --font-weight-header: 600;
+  --font-weight-name: 300;
+  --font-weight-light: 200;
+
+  /* color */
+  --border-color: #dfe6e9;
+  --nav-color: #f7f7f7;
+}
+
+.friends {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  padding: 0 30px;
+  top: 100px;
+  box-sizing: border-box;
+  bottom: 60px;
+  overflow: auto;
+}
+
+.friends_myaccount {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.friend_img {
+  width: var(--my-img-size);
+  height: var(--my-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
+.friends_plus {
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.friend_title {
+  margin-bottom: var(--title-space);
+  font-weight: var(--font-weight-light);
+}
+
+.plusfriend_img {
+  width: var(--friend-img-size);
+  height: var(--friend-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
+.friends_list {
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.friends_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friendList_img {
+  width: var(--friend-img-size);
+  height: var(--friend-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}

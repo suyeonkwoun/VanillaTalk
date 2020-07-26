@@ -1,0 +1,48 @@
+:root {
+  /* size */
+  --my-img-size: 60px;
+  --friend-img-size: 50px;
+  --base-space: 30px;
+  --img-name-space: 20px;
+  --title-space: 10px;
+  --chat-img-size: 50px;
+
+  /* font */
+  --font-weight-header: 600;
+  --font-weight-name: 300;
+  --font-weight-light: 200;
+
+  /* color */
+  --border-color: #dfe6e9;
+  --nav-color: #f7f7f7;
+}
+
+.chats_ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.chat_block {
+  display: flex;
+  align-items: center;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.chat_img {
+  width: var(--chat-img-size);
+  height: var(--chat-img-size);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.chat_date {
+  font-weight: var(--font-weight-light);
+  font-size: 12px;
+}
