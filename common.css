@@ -5,6 +5,7 @@
   --base-space: 30px;
   --img-name-space: 20px;
   --title-space: 10px;
+  --nav-icon-size: 20px;
 
   /* font */
   --font-weight-header: 600;
@@ -76,6 +77,13 @@ body {
   -webkit-animation: fadein 1s ease-in-out;
 }
 
+.friendList_img {
+  width: var(--friend-img-size);
+  height: var(--friend-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
 .friends_img_text {
   display: flex;
   align-items: center;
@@ -108,6 +116,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  font-size: var(--nav-icon-size);
 }
 @-webkit-keyframes fadein {
   /* Safari and Chrome */

@@ -1,0 +1,75 @@
+:root {
+  /* size */
+  --my-img-size: 60px;
+  --friend-img-size: 50px;
+  --base-space: 30px;
+  --img-name-space: 20px;
+  --title-space: 10px;
+  --chat-img-size: 50px;
+
+  /* font */
+  --font-weight-header: 600;
+  --font-weight-name: 300;
+  --font-weight-light: 200;
+  --find-header-icon-size: 28px;
+  --font-size-small: 14px;
+
+  /* color */
+  --border-color: #dfe6e9;
+  --nav-color: #f1f2f6;
+  --add-id-color: #f1f2f6;
+}
+
+.find_header {
+  padding: 30px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: var(--find-header-icon-size);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_item .find_header_text {
+  margin-top: 20px;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+}
+
+.recommended_title {
+  font-weight: var(--font-weight-light);
+}
+
+.recommended_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.recommended_left {
+  display: flex;
+  align-items: center;
+}
+
+.recommended_list_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recommended_right {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--add-id-color);
+  border-radius: 8px;
+}

@@ -67,10 +67,3 @@
   padding: 0;
   margin: 0;
 }
-
-.friendList_img {
-  width: var(--friend-img-size);
-  height: var(--friend-img-size);
-  border-radius: 50%;
-  margin-right: var(--img-name-space);
-}
