@@ -60,10 +60,12 @@
 
 .img_sent {
   margin-left: 10px;
+  animation: rotation 1s infinite linear;
 }
 
 .img_come {
   margin-right: 10px;
+  animation: rotation 1s infinite linear;
 }
 
 .in_chat {
@@ -80,12 +82,14 @@
   display: flex;
   align-self: flex-end;
   align-items: center;
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
 }
 
 .message_come {
   display: flex;
   align-self: flex-start;
   align-items: center;
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .chat_write {
@@ -144,4 +148,31 @@
 .emoji_microphone {
   position: absolute;
   right: 10px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
