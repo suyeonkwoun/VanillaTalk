@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room | Vanilla Talk</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./chat_room.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="fixed-top">
+      <div class="status-bar">
+        <div class="time">21:00</div>
+        <div class="icons">
+          <i class="fas fa-clock"></i><i class="fas fa-volume-mute"></i
+          ><i class="fas fa-wifi"></i>
+          <span>100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <header class="header">
+        <span
+          ><a href="./chat.html"><i class="fas fa-arrow-left"></i></a>
+          Bestie</span
+        >
+        <div class="icons">
+          <span class="icon"><i class="fas fa-search"></i></span
+          ><span class="icon"><i class="fas fa-cog"></i></span>
+        </div>
+      </header>
+    </div>
+    <main class="chat_screen">
+      <ul class="chat_messages">
+        <span class="in_chat_date in_chat">Tuesday, July 28, 2019</span>
+        <li class="message message_sent">
+          <span class="in_chat">
+            Hey, r u free tonight? there's a party from 9pm</span
+          >
+          <img class="chat_room_img img_sent" src="./images/my_img.png" />
+        </li>
+        <li class="message message_come">
+          <img class="chat_room_img img_come" src="./images/friend1.png" />
+          <span class="in_chat">Ok, i will go!</span>
+        </li>
+        <li class="message message_sent">
+          <span class="in_chat">where r u? we are all waiting for you!</span>
+          <img class="chat_room_img img_sent" src="./images/my_img.png" />
+        </li>
+        <li class="message message_come">
+          <img class="chat_room_img img_come" src="./images/friend1.png" />
+          <span class="in_chat">I'm Comming!</span>
+        </li>
+      </ul>
+    </main>
+    <div class="chat_write">
+      <input id="in" type="text" placeholder="Send Message" />
+      <div class="square_icon focusInvisible">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="emoji_microphone focusInvisible">
+        <i class="far fa-smile-wink"></i>
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+:root {
+  /* size */
+  --my-img-size: 60px;
+  --friend-img-size: 50px;
+  --base-space: 30px;
+  --img-name-space: 20px;
+  --title-space: 10px;
+  --chat-img-size: 50px;
+  --chat-room-img-size: 30px;
+
+  /* font */
+  --font-weight-header: 600;
+  --font-weight-name: 300;
+  --font-weight-light: 200;
+  --find-header-icon-size: 28px;
+  --font-size-small: 14px;
+
+  /* color */
+  --border-color: #dfe6e9;
+  --nav-color: #f1f2f6;
+  --add-id-color: #f1f2f6;
+}
+
+.fa-arrow-left {
+  margin-right: 20px;
+}
+
+.chat_screen {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 100px;
+  box-sizing: border-box;
+  bottom: 0;
+  overflow: auto;
+  background-image: url(./images/chat_background_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chat_messages {
+  padding: 30px 30px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message {
+  padding: 20px 0;
+}
+
+.chat_room_img {
+  width: var(--chat-room-img-size);
+  height: var(--chat-room-img-size);
+  border-radius: 50%;
+}
+
+.img_sent {
+  margin-left: 10px;
+}
+
+.img_come {
+  margin-right: 10px;
+}
+
+.in_chat {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 5px 10px;
+}
+
+.in_chat_date {
+  margin-bottom: 10px;
+}
+
+.message_sent {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+}
+
+.message_come {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.chat_write {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.chat_write input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.chat_write input[type="text"]:focus {
+  border: none;
+  outline: none;
+}
+
+#in {
+  margin: auto;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+#in:focus {
+  transform: translateY(-100px);
+  border-radius: 24px;
+  width: 50%;
+  transition: 0.5s ease-in-out;
+  margin: auto;
+}
+
+#in:focus ~ .focusInvisible {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.focusInvisible {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.square_icon {
+  position: absolute;
+  padding: 20px;
+}
+
+.emoji_microphone {
+  position: absolute;
+  right: 10px;
+}
