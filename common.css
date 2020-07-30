@@ -77,6 +77,19 @@ body {
   -webkit-animation: fadein 1s ease-in-out;
 }
 
+.friends_myaccount {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.friend_img {
+  width: var(--my-img-size);
+  height: var(--my-img-size);
+  border-radius: 50%;
+  margin-right: var(--img-name-space);
+}
+
 .friendList_img {
   width: var(--friend-img-size);
   height: var(--friend-img-size);

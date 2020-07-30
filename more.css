@@ -1,0 +1,71 @@
+:root {
+  /* icon */
+  --func_icon_size: 28px;
+  --suggestions_icon-background_color: #ffd32a;
+  --suggestions_icon_color: #ffffff;
+
+  /* font */
+  --font-weight-light: 200;
+  /* border */
+  --border-color: #dfe6e9;
+}
+
+.funcs_more {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+}
+
+.func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.func .func_icon {
+  font-size: var(--func_icon_size);
+}
+
+.func .func_icon_text {
+  margin-top: 10px;
+  font-weight: var(--font-weight-light);
+}
+
+.suggestions_section {
+  border-top: 1px solid var(--border-color);
+  font-weight: var(--font-weight-light);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.suggestions {
+  padding: 20px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.kakao_func {
+  display: flex;
+  margin-right: 40px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.kakao_func_icon {
+  font-size: var(--func_icon_size);
+  padding: 10px;
+  background-color: var(--suggestions_icon-background_color);
+  color: var(--suggestions_icon_color);
+  border-radius: 8px;
+}
+
+.suggestions_text {
+  margin-top: 10px;
+  font-size: 12px;
+}
