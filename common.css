@@ -15,6 +15,7 @@
   /* color */
   --border-color: #dfe6e9;
   --nav-color: #f7f7f7;
+  --big-screen-backgroundcolor: #ffd32a;
 }
 
 a {
@@ -32,6 +33,27 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   overflow: hidden;
+}
+
+.big_screen {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .big_screen {
+    display: flex;
+    background-color: var(--big-screen-backgroundcolor);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: var(--font-weight-header);
+    font-size: 28px;
+  }
 }
 
 .fixed-top {
